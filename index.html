@@ -36,7 +36,7 @@ var topoLayer =	L.tileLayer('https://opentopomap.org/{z}/{x}/{y}.png', {
 var wmsLayer = L.tileLayer.wms('https://wms.eea.government.bg/geoserver/GISWMR_INSPIRE/wms?', {
     layers: 'GISWMR_INSPIRE:AM.NitrateVulnerableZone',
     transparent: true,
-    opacity: 0.5
+    opacity: 0.6
 }).addTo(mymap);
 
 var baseMaps = {
@@ -55,8 +55,13 @@ L.control.layers(baseMaps, overlayMaps).addTo(mymap);
 function zoomTo() {
         var lat = document.getElementById("lat").value;
         var lng = document.getElementById("lng").value;
-        mymap.setView(new L.LatLng(lat, lng),14);
+        mymap.setView(new L.LatLng(lat, lng),15);
+         L.marker([lat,lng]).addTo(mymap);
+       
     }
+    
+
+
 </script>
 
 

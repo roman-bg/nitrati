@@ -1,0 +1,215 @@
+/*input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+
+}
+
+p {
+  border: 1px solid green;
+  border-radius: 12px;
+  text-align: center;
+}
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link 
+a:active {
+  color: blue;
+}*/
+
+@font-face {
+    font-family: 'intro_inline';
+    src: url('fonts/intro_inline-webfont.eot');
+    src: url('fonts/intro_inline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/intro_inline-webfont.woff2') format('woff2'),
+         url('fonts/intro_inline-webfont.woff') format('woff'),
+         url('fonts/intro_inline-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url(fonts/'ubuntu-light-webfont.eot');
+    src: url('fonts/ubuntu-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-light-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-light-webfont.woff') format('woff'),
+         url('fonts/ubuntu-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url('fonts/ubuntu-medium-webfont.eot');
+    src: url('fonts/ubuntu-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-medium-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-medium-webfont.woff') format('woff'),
+         url('fonts/ubuntu-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('fonts/ubuntu-regular-webfont.eot');
+    src: url('fonts/ubuntu-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-regular-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-regular-webfont.woff') format('woff'),
+         url('fonts/ubuntu-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+abbr,acronym {
+	border:0;
+}
+
+body {
+	background-color: #E3FAFF;
+	color: #555;
+	font-family: ubuntumedium;
+	line-height: 1.375;
+	font-size: 62.5%;
+
+}
+
+p {
+	font-size: 1.6em;
+	padding: 1em 5%;
+	text-align: center;
+}
+
+#mapid {
+	width: 90%; 
+	margin: 50px 5% 20px;
+	height: 420px;
+}
+
+.width-50 {
+    display: block;
+    width: 96%;
+    padding: 5px 2%;
+    float: left;
+}
+
+.instructions {
+	display: block;
+	clear: both;
+}
+
+.instructions a:hover {
+	color: #1f3c16;
+	text-decoration: none;
+}
+
+.geo-loc input {
+	padding: 8px 3%;
+	margin: 0 auto;
+	outline: none;
+	width: 94%;
+	max-width: 500px;
+	text-align: center;
+	display: block;
+	font-family: ubuntulight;
+	font-size: 1.2em !important;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(73,150,49,.5);
+	border-radius: 0;
+	background-color: rgba(73,150,49,.05);
+	color: #1a150b !important;
+}
+
+.geo-desc {
+	display: block;
+	font-family: ubunturegular;
+	font-size: 1em ;
+	margin: 0 0 15px;
+	color: rgba(73,150,49,1);
+}
+
+.register-button {
+    display: block;
+    text-align: center;
+    font-size: 2.4em;
+    margin: 0 auto 20px;
+    padding: 16px 25px;
+    text-transform: uppercase;
+    border: 1px solid #499631;
+    background: none;
+    color: #499631;
+    cursor: pointer;
+    clear: both;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.register-button:hover {
+	background: #499631;
+	border: 1px solid #306320;
+	color: #fff;
+}

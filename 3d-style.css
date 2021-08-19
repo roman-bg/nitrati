@@ -1,0 +1,900 @@
+@font-face {
+    font-family: 'intro_inline';
+    src: url('fonts/intro_inline-webfont.eot');
+    src: url('fonts/intro_inline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/intro_inline-webfont.woff2') format('woff2'),
+         url('fonts/intro_inline-webfont.woff') format('woff'),
+         url('fonts/intro_inline-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url(fonts/'ubuntu-light-webfont.eot');
+    src: url('fonts/ubuntu-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-light-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-light-webfont.woff') format('woff'),
+         url('fonts/ubuntu-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url('fonts/ubuntu-medium-webfont.eot');
+    src: url('fonts/ubuntu-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-medium-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-medium-webfont.woff') format('woff'),
+         url('fonts/ubuntu-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('fonts/ubuntu-regular-webfont.eot');
+    src: url('fonts/ubuntu-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-regular-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-regular-webfont.woff') format('woff'),
+         url('fonts/ubuntu-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+abbr,acronym {
+	border:0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	background-color: #fff;
+	color: #505050;
+	font-family: ubunturegular; 
+	line-height: 1.375;
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+ol, ul {
+    list-style: none outside none;
+}
+
+h1 {
+	position:relative;
+	font-family: ubuntulight;
+	font-size: 4em;
+	font-weight: normal;
+    font-style: normal;
+	text-align: center;
+	color: #222;
+	margin: 0;
+	padding: 10px 0;
+}
+
+#gaming h1, #gaming > div > p, #architecture h1, #architecture > div > p, #registration h1, #registration > div > p , #location h1, #location > div > p  {
+	color: #fff;
+}
+
+#registration h1  {
+	border-bottom: 1px solid #fff;
+	padding: 0 0 30px 0;
+}
+
+.photo-h1 {
+	color: #222 !important;
+	margin: 0;
+	padding: 40px 0;
+}
+
+h2 {
+	font-family: ubuntulight;
+	font-size: 2.2em;
+	font-weight: normal;
+    font-style: normal;
+	position: relative;
+	text-align: center;
+	display: block;
+	color: #2fc0db;
+	margin: 5px 0 15px 0;
+}
+
+h3 {
+	font-family: shadows_into_lightregular;
+	font-size: 3.6em;
+	text-align: center;
+	font-weight: normal;
+    font-style: normal;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+h4 {
+	font-family: open_sanslight;
+	font-size: 2.8em;
+	text-align: center;
+	font-weight: normal;
+    font-style: normal;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+
+h5 {
+	font-family: open_sansbold;
+	font-size: 1.4em;
+	font-weight: normal;
+    font-style: normal;
+	position: relative;
+	text-align: center;
+	margin-bottom: 5px;
+	color: #414141;
+}
+
+p {
+	font-family: ubunturegular;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	margin: 0.75em 0;
+	color: #505050;
+	text-align: center;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.section-content {
+	margin: 0 auto;
+	padding: 40px 5%;
+	max-width: 1140px;
+}
+
+.section-content.people {
+	padding: 60px 5% 40px !important;
+}
+
+.width-50 {
+	display: block;
+	width: 46%;
+	padding: 15px 2% 30px;
+	float: left;
+}
+
+.width-15 {
+	display: block;
+	width: 11%;
+	margin: 20px 0;
+	padding: 0 2%;
+	float: left;
+}
+
+.width-20 {
+	display: block;
+	width: 16%;
+	margin: 20px 0;
+	padding: 0 2%;
+	float: left;
+}
+
+.width-25 {
+	display: block;
+	width: 21%;
+	margin: 20px 0;
+	padding: 0 2%;
+	float: left;
+}
+
+.width-30 {
+	display: block;
+	width: 26%;
+	margin: 20px 0;
+	padding: 0 2%;
+	float: left;
+}
+
+.width-35 {
+	display: block;
+	width: 30%;
+	margin: 20px 0;
+	padding: 0 2%;
+	float: left;
+}
+
+.width-45 {
+	display: block;
+	width: 41%;
+	margin: 20px 0;
+	padding: 0 2%;
+	float: left;
+}
+
+.people h2 {
+	font-size: 1.6em;
+	margin: 0;
+	font-family: ubuntumedium;
+	text-align: left;
+}
+
+.people p{
+	font-size: 1.4em;
+	text-align: left;
+}
+
+.people .photos {
+	float: left;
+	padding: 0 30px 30px 0;
+}
+
+/*  Responsive video  */
+
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+/* Registration checkboxes  */
+
+#registration .width-50 {
+	margin-top:40px;
+}
+
+#registration input[type="checkbox"] {
+    display:none;
+}
+#registration input[type="checkbox"] + label {
+    display: block;
+	font-size: 1.6em;
+	line-height: 3.4em;
+}
+#registration input[type="checkbox"] + label span {
+    display:inline-block;
+    width:32px;
+    height:32px;
+    margin:0 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+#registration input[type="checkbox"]:checked + label span {
+    background:url(../images/check_radio_sheet.png) -32px top no-repeat;
+}
+
+#registration input[type="text"], #registration input[type="password"], #registration input[type="email"], #registration input[type="tel"], #registration textarea, #registration select {
+  padding: 12px 3%;
+  outline: none;
+  margin: 0;
+  width: 94%;
+  display: block;
+  
+  font-family: ubuntulight;
+  font-size: 1.6em !important;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0,0,0,.08);
+  border-radius: 0;
+  background-color: #fff;
+  color: #1a150b !important;
+  -webkit-box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.02);
+  box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.02);
+}
+
+#registration input.email {
+	margin-top: 25px;
+}
+
+
+
+/* This class is added on scroll */
+.fixed {
+	position: fixed; 
+	top: 0; 
+	height: 106px; 
+	z-index: 10;
+}
+
+
+/* Navigation Settings */
+
+.start-logo {
+	position: relative;
+	display: inline-block;
+	float: left;
+	height: 100%;
+}
+
+.start-logo img {
+	position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+
+#right-link  {
+	position: relative;
+	display: inline-block;
+	float: right;
+	color: #fff;
+	font-size: 1.6em;
+	cursor: pointer;
+	height: 106px;
+	margin-top: -106px;
+}
+
+#right-link  a {
+	position: absolute;
+	display: block;
+	text-align: center;
+	font-family: intro_inline;
+	color: #fff;
+	width: auto;
+	padding: 10px 15px;
+	margin: 20px 0;
+	right: 20px;
+	top: 0;
+	bottom: 0;
+	background: #e16641;
+	cursor: pointer;
+}
+
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 106px;
+	text-align: center;
+	background: #000;
+	z-index: 9999;
+}
+
+nav li {
+	display: inline-block;
+}
+
+
+
+/* Screens Settings */
+#screen1 {	
+	background: #43b29d;
+	min-height: 100vh;
+	text-align: center;
+}
+
+#screen1 h1 {
+	display: inline-block;
+	padding-top: 30vh;
+	padding-bottom: 30px;
+	font-family: intro_inline;
+	font-size: 4.2em;
+	border-bottom: 1px solid #fff;
+}
+
+#screen1 h2 {
+	font-family: intro_inline;
+	font-size: 2.1em;
+	margin: 30px 0 5px;
+}
+
+#screen1 p {
+	font-family: intro_inline;
+	font-size: 1.1em;
+	color: #fff;
+	margin: 0;
+}
+
+#event {
+	height: auto;
+	background: #fff;
+}
+
+#gaming {
+	background: #0e161a url(../images/3d-back.jpg) center top no-repeat ;
+}
+
+#architecture {
+	background: #0e161a url(../images/arch-back.jpg) center top no-repeat ;
+}
+
+#registration {
+	background: #2fc0db url(../images/registration-back.jpg) center top no-repeat ;
+}
+
+#location {
+	background: #1a2129 url(../images/location-back.jpg) center top no-repeat ;
+}
+
+#partners {
+	text-align: center;
+	width: 96%;
+	padding: 30px 2%;
+}
+
+#partners a {
+	display: inline-block;
+	padding: 10px 5px;
+}
+
+#partners .action-button {
+	text-align: center;
+	font-size: 2.4em;
+	margin: 20px 0;
+	padding: 16px 25px;
+	text-transform: uppercase;
+	border: 1px solid #1a150b;
+	background: none;
+	color: #1a150b;
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+#partners .action-button.partner:hover {
+	background: #2fc0db;
+	border: 1px solid #2fc0db;
+	color: #fff;
+}
+
+.register-button {
+	display: block;
+	text-align: center;
+	font-size: 2.4em;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 16px 25px;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	background: none;
+	color: #fff;
+	cursor: pointer;
+	clear: both;
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+.register-button:hover {
+	background: #1a150b;
+	border: 1px solid #1a150b;
+	color: #fff;
+}
+
+
+
+/*   Tabs   */
+
+body ~ :checked {} /* webkit fix */
+
+.tabs {
+	text-align: center;
+}
+
+.tabs input {display:none;}
+
+.tabs label {
+    background: none; 
+    cursor: pointer;
+    display: inline-block; 
+    padding:20px;
+	font-size: 1.5em;
+	color: #fff;
+}
+
+.tabs > div {
+    display:block;
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+	width: 100%;
+    padding: 0;
+	background: #fff;
+}
+
+#tabs-2 :checked + * + * + * +  label { background-color:#fff;color: #000;}  /* tabs-2  - more tabs need more '+ * +'  */
+#tabs-2 :checked + * + * + * + * + * + * + * + div { display: block; position: relative !important; top: 0px !important; left: 0px !important; width: 100%; }
+#tabs-3 :checked + * + * + * +  label { background-color:#fff;color: #000;}  /* tabs-2  - more tabs need more '+ * +'  */
+#tabs-3 :checked + * + * + * + * + * + * + * + div { display: block; position: relative !important; top: 0px !important; left: 0px !important; width: 100%; }
+
+
+/* Table Programm  */
+
+.section-content table {
+	font-family: ubuntulight;
+	font-size: 1.8em;
+}
+
+.section-content table tr {
+	display: block;
+	margin: 15px 0;
+}
+
+.column-1 {
+	min-width: 150px;
+}
+
+.bold-row {
+	font-family: ubuntumedium;
+}
+
+/* This CSS is used for the Show/Hide functionality. */
+
+   .more {
+      display: none;
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666; }
+   a.showLink, a.hideLink {
+      text-decoration: none;
+      color: #36f;
+      padding-left: 8px;
+      background: transparent url(down.gif) no-repeat left; }
+   a.hideLink {
+      background: transparent url(up.gif) no-repeat left; }
+   a.showLink:hover, a.hideLink:hover {
+      border-bottom: 1px dotted #36f; }
+	 
+.a-more {
+	display: inline-block;
+	min-width: 30px;
+	height: 0.875em;
+	background: url(../images/more.png) center center no-repeat ;
+}
+
+
+/*  --------------- Unslider ---------------  */
+
+
+.banner {
+	position: relative;
+	width: auto;
+	height: 100vh;
+	overflow: auto;
+	
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	
+	color: rgba(255,255,255,.6);
+	text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+	
+	background: #5b4d3d;
+	box-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+	.banner ul {
+		list-style: none;
+		width: 300%;
+		padding: 0;
+		margin: 0;
+	}
+	.banner ul li {
+		display: block;
+		float: left;
+		width: 33%;
+		padding: 0 0 0;
+		
+		min-height: 100vh;
+		
+		-webkit-background-size: 100% 100%;
+		-moz-background-size: 100% 100%;
+		-o-background-size: 100% 100%;
+		-ms-background-size: 100% 100%;
+		background-size: 100% 100%;
+		
+		box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
+	}
+	
+	.banner ul li  img{
+		width: auto;
+		height: auto;
+		overflow: hidden;
+	}
+	
+	.banner h1, .banner h2 {
+		font-size: 40px;
+		line-height: 52px;
+		
+		color: #fff;
+	}
+	
+	.banner .btn {
+		display: inline-block;
+		margin: 25px 0 0;
+		padding: 9px 22px 7px;
+		clear: both;
+		
+		color: #fff;
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+		
+		border: 2px solid rgba(255,255,255,.4);
+		border-radius: 5px;
+	}
+		.banner .btn:hover {
+			background: rgba(255,255,255,.05);
+		}
+		.banner .btn:active {
+			-webkit-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+			-moz-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+			-ms-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+			-o-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+			filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+		}
+		
+	.banner .btn, .banner .dot {
+		-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+		-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+		-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+		-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+		filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+	}
+	
+	.banner .dots {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+		.banner .dots li {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin: 0 6px;
+			
+			text-indent: -999em;
+			
+			border: 2px solid #3498db;
+			border-radius: 6px;
+			
+			cursor: pointer;
+			opacity: .4;
+			background: #fff;
+			-webkit-transition: background .5s, opacity .5s;
+			-moz-transition: background .5s, opacity .5s;
+			transition: background .5s, opacity .5s;
+		}
+			.banner .dots li.active {
+				background: #3498db;
+				opacity: 1;
+			}
+	.unslider-arrow {		
+		position: absolute;
+		z-index: 9999;
+	}
+	
+	.unslider-arrow.next {		
+		cursor: pointer;
+		background: url("../cubeportfolio/img/cbp-sprite.png") no-repeat scroll -46px 0 transparent;
+		width: 44px;
+		height: 44px;
+		top: 0;
+		bottom: 0;
+		right: 20px;
+		margin: auto;
+	}
+	
+	.unslider-arrow.prev{		
+		cursor: pointer;
+		background: url("../cubeportfolio/img/cbp-sprite.png") no-repeat scroll 0 0 transparent;
+		width: 44px;
+		height: 44px;
+		top: 0;
+		bottom: 0;
+		left: 20px;
+		margin: auto;
+	}
+	
+.map-frame {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+/* Footer  */
+
+.copyright {
+	font-size: 1.4em;
+}
+
+p.face-link {
+	font-size: 3em;
+}
+
+p.face-link  a{
+	font-family: ubuntumedium;
+	color: #262c34;
+	border-bottom: 1px solid #262c34;
+}
+
+p.face-link  a:hover{
+	color: #2fc0db;
+	border-bottom: 1px solid #2fc0db;
+}
+
+#footer .bottom {
+	position: relative;
+	display: block;
+	background: #000;
+	padding: 10px 0;
+}
+
+.bottom .linia {
+	border-right: 1px solid #5f6770;
+}
+
+.bottom p {
+	text-align: left;
+	color: #7a8189;
+}
+
+.bottom a {
+	color: #7a8189;
+}
+
+.bottom a:hover {
+	color: #fff;
+}
+
+.mail {
+  padding-left: 40px;
+  margin: 0.75em 0;
+  background: url(../images/mail.png) left center no-repeat;
+}
+
+.phone {
+  padding-left: 40px;
+  margin: 0.75em 0;
+  background: url(../images/phone.png) left center no-repeat;
+}
+
+.emptyp {
+	height: 2.4em;
+	margin:0;
+	padding: 0;
+}
+
+.menusocial-footer {
+	position: relative;
+	display: block;
+	padding: 0;
+}
+
+.menusocial-footer li {
+	display: inline-block; 
+}
+
+.menusocial-footer .facebook {	
+	display: block;
+	width: 41px;
+	height: 40px;
+	text-indent: -9999px;
+	margin: 0;
+	background: url(../images/social/facebook-foo.png) left top no-repeat;
+}
+
+.menusocial-footer .twitter {	
+	display: block;
+	width: 41px;
+	height: 40px;
+	text-indent: -9999px;
+	margin: 0 0 0 12px;
+	background: url(../images/social/twitter-foo.png) left top no-repeat;
+}
+
+.menusocial-footer .linkedin {	
+	display: block;
+	width: 41px;
+	height: 40px;
+	text-indent: -9999px;
+	margin: 0 0 0 12px;
+	background: url(../images/social/linkedin-foo.png) left top no-repeat;
+}
+
+.menusocial-footer .twitter {	
+	display: block;
+	width: 41px;
+	height: 40px;
+	text-indent: -9999px;
+	margin: 0 0 0 12px;
+	background: url(../images/social/twitter-foo.png) left top no-repeat;
+}
+
+.menusocial-footer .google{	
+	display: block;
+	width: 41px;
+	height: 40px;
+	text-indent: -9999px;
+	margin: 0 0 0 12px;
+	background: url(../images/social/google-foo.png) left top no-repeat;
+}
+
+.menusocial-footer .pinterest {	
+	display: block;
+	width: 41px;
+	height: 40px;
+	text-indent: -9999px;
+	margin: 0 0 0 12px;
+	background: url(../images/social/pinterest-foo.png) left top no-repeat;
+}
+
+.menusocial-footer .youtube {	
+	display: block;
+	width: 41px;
+	height: 40px;
+	text-indent: -9999px;
+	margin: 0 0 0 12px;
+	background: url(../images/social/youtube-foo.png) left top no-repeat;
+}
+
+.menusocial-footer .facebook:hover, .menusocial-footer .twitter:hover, .menusocial-footer .google:hover, .menusocial-footer .pinterest:hover, .menusocial-footer .youtube:hover, .menusocial-footer .instagram:hover, .menusocial-footer .linkedin:hover {	
+	background-position: left bottom; 
+}

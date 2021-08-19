@@ -24,9 +24,11 @@
 
 	var mymap = L.map('mapid').setView([43.075672, 25.617151], 10);
 
-var tileLayer =	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+
+
+var topoLayer =	L.tileLayer('https://opentopomap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	attribution: '&copy; <a href="https://opentopomap.org/copyright">OpenTopoMap</a> contributors'
 }).addTo(mymap);
 
 
@@ -38,7 +40,8 @@ var wmsLayer = L.tileLayer.wms('https://wms.eea.government.bg/geoserver/GISWMR_I
 }).addTo(mymap);
 
 var baseMaps = {
-    "OSM": tileLayer
+  
+    "Topo": topoLayer
     
 };
 

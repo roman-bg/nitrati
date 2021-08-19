@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Нитратно уязвими зони - търсачка</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+
+}
+
+p {
+  border: 1px solid green;
+  border-radius: 12px;
+  text-align: center;
+}
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+</style>
+
+</head>
+<body>
+
+
+
+<div id="mapid" style="width: 100%; height: 320px;"></div>
+<script>
+
+	var mymap = L.map('mapid').setView([43.075672, 25.617151], 10);
+
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(mymap);
+
+
+
+var wmsLayer = L.tileLayer.wms('https://wms.eea.government.bg/geoserver/GISWMR_INSPIRE/wms?', {
+    layers: 'GISWMR_INSPIRE:AM.NitrateVulnerableZone',
+    transparent: true,
+    opacity: 0.5
+}).addTo(mymap);
+
+function zoomTo() {
+        var lat = document.getElementById("lat").value;
+        var lng = document.getElementById("lng").value;
+        mymap.setView(new L.LatLng(lat, lng),14);
+    }
+</script>
+<br>
+
+ Latitude: <input type="text" name="lat" id="lat"/>
+    <br/>
+    Longitude: <input type="text" name="lng" id="lng"/>
+    <input type="button" onclick="zoomTo()" value="Намери"/>
+
+<p><a href="nitrati.pdf" target="_blank">Вижте как да постъпите ако попаднете на нарушение на земеделски практики в нитратно уязвимите зони</a></p>
+</body>
+</html>

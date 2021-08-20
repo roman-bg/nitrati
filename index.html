@@ -50,7 +50,7 @@ var overlayMaps = {
 
 	    };
 
-L.control.layers(baseMaps, overlayMaps).addTo(mymap);
+L.control.layers(baseMaps, overlayMaps,{collapsed:false}).addTo(mymap);
 
 function zoomTo() {
         var lat = document.getElementById("lat").value;
